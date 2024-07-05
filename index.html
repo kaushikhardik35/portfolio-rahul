@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="imgs/logo.png" class="logo" alt="Kumar Rahul" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li>
+              <a href="http://github.com/kaushikhardik35" target="_blank"
+                >Github</a
+              >
+            </li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header1">
+          <p>Freelancer</p>
+          <h1>
+            Hi, I'm <span>Kumar Rahul</span> <br />
+            <span style="color: #EFEFD0; font-size: xx-large"
+              >Innovative and Creative Professional working at
+            </span>
+            <br />
+            Consultant @ <span style="color: #ad1b02">PwC</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="imgs/about1.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              As an Assosiate in Data Analytics at PwC, I bring a solid foundation in Electrical and Computer Engineering from Delhi Technological University, where I maintained a 9.26 CGPA. My career journey includes impactful roles such as a Research Analyst at Mitacs Globalink Intern, focusing on Quantum State determination using Weak Measurements for Photons, and a Data Analyst at Innovative Infotech Pvt Ltd, where I conducted extensive data cleaning and EDA for stock analysis. Proficient in Python, MATLAB, and data analysis tools, I've developed projects like Quantum Photonic Data Analysis and ForecastNET for stock prediction using LSTM models. My leadership skills, nurtured through roles at DTU and accomplishments such as receiving the MITACS Globalink Research Scholarship, underscore my commitment to delivering innovative solutions and driving success at PwC.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Languages</span><br />Python, SQL, C++</li>
+                <li>
+                  <span>Python Libraries</span><br /> NumPy, Pandas, Matplotlib, Scikit-learn, SciPy
+                </li>
+                <li><span>Tools</span><br />Snowflake, MS Office, Figma, Canva</li>
+                <li><span>Tech Stacks</span><br />Machine Learning, Data Analysis, Data Science</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Subject Matter Expert (Mathematics) Intern</span><br />
+                  <span>V.K. Global </span><br />
+                  <div class="green">
+                    06/2024 – Present
+                    <pre></pre>
+                    <i
+                      class="fa fa-map-marker"
+                      style="font-size: 20px; color: red"
+                    ></i
+                    >Delhi,India
+                  </div>
+                  <br />
+                  • Developed Subject Matter for different subjects for CBSE
+                  <br />
+                  • Lead Animation team for developing over 8000 videos and animations for various subject.
+                </li>
+                <li>
+                  <span>Research Intern</span><br />
+                  <span>University De Moncton, Canada </span><br />
+                  <div class="green">
+                    05/2023 – 08/2023
+                    <pre></pre>
+                    <i
+                      class="fa fa-map-marker"
+                      style="font-size: 20px; color: red"
+                    ></i
+                    >Canada
+                  </div>
+                  <br />
+                  • Worked on the project Weak Measurements for determining Quantum State of Photons.
+                  <br />
+                  • Currently Working as a Data Analyst and Research Intern.
+                  <br />
+                  • Captured Data through NI Hardware and implemented it on Python using the Pandas, NI-DAQmx, PyFirmata, SciPy, matplotlib library for Data Acquisition and Analysis and obtained results up to 95% accuracy.
+                </li>
+                <li>
+                  <span>Research Analyst</span><br />
+                  <span>DRDO, Ministry of Defense, Government of India </span><br />
+                  <div class="green">
+                    11/2021 – 01/2022
+                    <pre></pre>
+                    <i
+                      class="fa fa-map-marker"
+                      style="font-size: 20px; color: red"
+                    ></i
+                    >Delhi, India
+                  </div>
+                  <br />
+                  • Proficient in Quantum Cryptography concepts, including Encryption and Decryption algorithms and protocols
+                  <br />
+                  • Experienced with Qi-skit and IBM for Quantum Computing, as well as analyzing captured traffic using Wire-Shark.
+                  <br />
+                  • Conducted in-depth research on Qubit, superposition state, Quantum Key Distribution (QKD) Protocols, Quantum entanglement, and quantum gates.
+                  <br />
+                  • Applied knowledge to program and implement complex gates for Ethical Hacking purposes.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020-2024</span><br />B.Tech (Electrical Engineering with minor in Computer Engineering)
+                  from Delhi Technological University
+                </li>
+                <li>
+                  <span>2018-2019</span><br />XII (CBSE) from Chand Ram Public Senior Secondary School
+                </li>
+                <li>
+                  <span>2016-2017</span><br />X (CBSE)from Manas Sthali Public School
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- -------------Portfolio------------- -->
+    <!-- ----------contact form---------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <a
+              href="mailto:rahul.2301.kr@gmail.com"
+              style="text-decoration: none; color: aqua"
+            >
+              <p>
+                <i class="fas fa-paper-plane"></i> Email
+              </p></a
+            >
+            </div>
+            <a
+              href="./imgs/resume.pdf"
+              download
+              target="_blank"
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="xyz@gmail.com"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          © Copyright <i class="fas fa-copyright"></i> Kumar Rahul. Made with ❤️
+          <i class="fas fa-heart"></i>
+        </p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzBDnqeaXzwduroNBsCmtFdLujLNB9sCPO2JPUBs6jHaV5sr0OXnZ0bw7IoqffdR3YN/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully !";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000); //means 5000ms = 5s
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script>
+      document
+        .getElementById("seeMoreBtn")
+        .addEventListener("click", function () {
+          // Toggle the display property of the hidden works
+          const hiddenWorks = document.querySelectorAll(".work-list");
+          console.log(hiddenWorks.length);
+          hiddenWorks.forEach(function (work) {
+            work.style.display = "flex"; // Change to the appropriate display property
+          });
+
+          // Hide the "See more" button after all works are visible
+          document.getElementById("seeMoreBtn").style.display = "none";
+        });
+    </script>
+  </body>
+</html>
